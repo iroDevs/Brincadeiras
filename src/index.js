@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TelaJogo from './pages/jogo-senha/TelaJogo';
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   path:"/",
   element: <Home />,
 },
+{
+  path:"/jogo-senha",
+  element: <TelaJogo />,
+}
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
